@@ -1,0 +1,1261 @@
+2021-12-22 22:36:00.896674 (MainThread): Running with dbt=0.21.0
+2021-12-22 22:36:00.990320 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.rpc.server.RPCServerTask'>, debug=False, defer=None, exclude=None, host='0.0.0.0', log_cache_events=False, log_format='default', models=None, partial_parse=True, port=8580, profile='user', profiles_dir='/usr/src/develop/.dbt', project_dir=None, record_timing_info=None, rpc_method=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='rpc', write_json=True)
+2021-12-22 22:36:01.011551 (MainThread): Tracking: tracking
+2021-12-22 22:36:01.013345 (Thread-12): Unable to do partial parsing because target/partial_parse.msgpack not found
+2021-12-22 22:36:01.019146 (Thread-12): Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c977bf3a-f3d2-438d-8cc6-5f63829ffaa8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dddc6d30>]}
+2021-12-22 22:36:01.022456 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4302126e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dddf3070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dddf30d0>]}
+2021-12-22 22:36:01.022681 (MainThread): Serving RPC server at 0.0.0.0:8580, pid=21
+2021-12-22 22:36:01.022862 (MainThread): Supported methods: ['build', 'cli_args', 'compile', 'compile_sql', 'deps', 'docs.generate', 'gc', 'get-manifest', 'kill', 'list', 'poll', 'ps', 'run', 'run-operation', 'run_sql', 'seed', 'snapshot', 'snapshot-freshness', 'source-freshness', 'status', 'test']
+2021-12-22 22:36:01.022993 (MainThread): Send requests to http://localhost:8580/jsonrpc
+2021-12-22 22:36:01.053551 (Thread-12): Parsing macros/generate_schema_name.sql
+2021-12-22 22:36:01.055784 (Thread-12): Parsing macros/catalog.sql
+2021-12-22 22:36:01.068198 (Thread-12): Parsing macros/adapters.sql
+2021-12-22 22:36:01.095696 (Thread-12): Parsing macros/relations.sql
+2021-12-22 22:36:01.096294 (Thread-12): Parsing macros/materializations/snapshot_merge.sql
+2021-12-22 22:36:01.096930 (Thread-12): Parsing macros/catalog.sql
+2021-12-22 22:36:01.099049 (Thread-12): Parsing macros/adapters.sql
+2021-12-22 22:36:01.231600 (Thread-12): Parsing macros/relations.sql
+2021-12-22 22:36:01.232936 (Thread-12): Parsing macros/materializations/snapshot_merge.sql
+2021-12-22 22:36:01.234565 (Thread-12): Parsing macros/core.sql
+2021-12-22 22:36:01.238198 (Thread-12): Parsing macros/materializations/test.sql
+2021-12-22 22:36:01.244493 (Thread-12): Parsing macros/materializations/helpers.sql
+2021-12-22 22:36:01.253715 (Thread-12): Parsing macros/materializations/view/view.sql
+2021-12-22 22:36:01.260495 (Thread-12): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-12-22 22:36:01.264194 (Thread-12): Parsing macros/materializations/seed/seed.sql
+2021-12-22 22:36:01.285257 (Thread-12): Parsing macros/materializations/snapshot/strategies.sql
+2021-12-22 22:36:01.301397 (Thread-12): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-12-22 22:36:01.302985 (Thread-12): Parsing macros/materializations/snapshot/snapshot.sql
+2021-12-22 22:36:01.332218 (Thread-12): Parsing macros/materializations/table/table.sql
+2021-12-22 22:36:01.339139 (Thread-12): Parsing macros/materializations/common/merge.sql
+2021-12-22 22:36:01.352163 (Thread-12): Parsing macros/materializations/incremental/on_schema_change.sql
+2021-12-22 22:36:01.370554 (Thread-12): Parsing macros/materializations/incremental/incremental.sql
+2021-12-22 22:36:01.380510 (Thread-12): Parsing macros/materializations/incremental/helpers.sql
+2021-12-22 22:36:01.382563 (Thread-12): Parsing macros/etc/get_custom_alias.sql
+2021-12-22 22:36:01.384344 (Thread-12): Parsing macros/etc/datetime.sql
+2021-12-22 22:36:01.393441 (Thread-12): Parsing macros/etc/query.sql
+2021-12-22 22:36:01.394425 (Thread-12): Parsing macros/etc/where_subquery.sql
+2021-12-22 22:36:01.396129 (Thread-12): Parsing macros/etc/get_custom_database.sql
+2021-12-22 22:36:01.397701 (Thread-12): Parsing macros/etc/get_custom_schema.sql
+2021-12-22 22:36:01.401048 (Thread-12): Parsing macros/etc/is_incremental.sql
+2021-12-22 22:36:01.402523 (Thread-12): Parsing macros/adapters/common.sql
+2021-12-22 22:36:01.454352 (Thread-12): Parsing macros/schema_tests/accepted_values.sql
+2021-12-22 22:36:01.456607 (Thread-12): Parsing macros/schema_tests/not_null.sql
+2021-12-22 22:36:01.457835 (Thread-12): Parsing macros/schema_tests/relationships.sql
+2021-12-22 22:36:01.459449 (Thread-12): Parsing macros/schema_tests/unique.sql
+2021-12-22 22:36:01.651831 (Thread-12): Acquiring new redshift connection "model.basic_dbt.my_second_dbt_model".
+2021-12-22 22:36:01.665444 (Thread-12): Acquiring new redshift connection "model.basic_dbt.my_first_dbt_model".
+2021-12-22 22:36:01.747570 (Thread-12): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c977bf3a-f3d2-438d-8cc6-5f63829ffaa8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dccb6f40>]}
+2021-12-22 22:36:02.902035 (Thread-13): handling status request
+2021-12-22 22:36:02.902523 (Thread-13): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'c977bf3a-f3d2-438d-8cc6-5f63829ffaa8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dccfb7f0>]}
+2021-12-22 22:36:02.903294 (Thread-13): sending response (<Response 11472 bytes [200 OK]>) to 10.0.1.233
+2021-12-22 22:36:02.945819 (Thread-14): handling status request
+2021-12-22 22:36:02.946199 (Thread-14): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'c977bf3a-f3d2-438d-8cc6-5f63829ffaa8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dddb4f70>]}
+2021-12-22 22:36:02.946952 (Thread-14): sending response (<Response 11472 bytes [200 OK]>) to 10.0.34.21
+2021-12-22 22:36:02.969714 (Thread-15): handling ps request
+2021-12-22 22:36:02.969971 (Thread-15): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'c977bf3a-f3d2-438d-8cc6-5f63829ffaa8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dccb6fd0>]}
+2021-12-22 22:36:02.970430 (Thread-15): sending response (<Response 105 bytes [200 OK]>) to 10.0.23.128
+2021-12-22 22:36:02.974804 (Thread-16): handling status request
+2021-12-22 22:36:02.975013 (Thread-16): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'c977bf3a-f3d2-438d-8cc6-5f63829ffaa8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dcc7d250>]}
+2021-12-22 22:36:02.975683 (Thread-16): sending response (<Response 11472 bytes [200 OK]>) to 10.0.38.38
+2021-12-22 22:36:04.432845 (Thread-17): handling status request
+2021-12-22 22:36:04.433160 (Thread-17): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'c977bf3a-f3d2-438d-8cc6-5f63829ffaa8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dcc7d5b0>]}
+2021-12-22 22:36:04.433910 (Thread-17): sending response (<Response 11450 bytes [200 OK]>) to 10.0.35.28
+2021-12-22 22:36:04.442081 (Thread-18): handling list request
+2021-12-22 22:36:04.442299 (Thread-18): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'c977bf3a-f3d2-438d-8cc6-5f63829ffaa8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dcc7db20>]}
+2021-12-22 22:36:04.474542 (Thread-18): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '916f8ba2-b413-4a73-8df1-be3199b7bf45', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dddb4c40>]}
+2021-12-22 22:36:04.474886 (Thread-18): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 189 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-12-22 22:36:04.479468 (Thread-18): The selection criterion '+1640212564240/__unsaved/Statement' does not match any nodes
+2021-12-22 22:36:04.479682 (Thread-18): The selection criterion '1.sql+' does not match any nodes
+2021-12-22 22:36:04.479782 (Thread-18): No nodes selected!
+2021-12-22 22:36:04.481569 (Thread-18): sending response (<Response 2282 bytes [200 OK]>) to 10.0.35.28
+2021-12-22 22:36:18.143094 (Thread-19): handling status request
+2021-12-22 22:36:18.144813 (Thread-19): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '916f8ba2-b413-4a73-8df1-be3199b7bf45', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dcc7d5b0>]}
+2021-12-22 22:36:18.145597 (Thread-19): sending response (<Response 11450 bytes [200 OK]>) to 10.0.35.28
+2021-12-22 22:36:18.151631 (Thread-20): handling list request
+2021-12-22 22:36:18.151861 (Thread-20): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '916f8ba2-b413-4a73-8df1-be3199b7bf45', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dcd392b0>]}
+2021-12-22 22:36:18.180335 (Thread-20): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '05f44c7c-a5b4-4382-b2af-27f2e5b942f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dccbc670>]}
+2021-12-22 22:36:18.180652 (Thread-20): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 189 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-12-22 22:36:18.181424 (Thread-20): The selection criterion '+1640212564240/__unsaved/Statement' does not match any nodes
+2021-12-22 22:36:18.181597 (Thread-20): The selection criterion '1.sql+' does not match any nodes
+2021-12-22 22:36:18.181683 (Thread-20): No nodes selected!
+2021-12-22 22:36:18.183205 (Thread-20): sending response (<Response 2282 bytes [200 OK]>) to 10.0.35.28
+2021-12-22 22:36:20.469484 (Thread-21): handling status request
+2021-12-22 22:36:20.469804 (Thread-21): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '05f44c7c-a5b4-4382-b2af-27f2e5b942f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dcc7d610>]}
+2021-12-22 22:36:20.470608 (Thread-21): sending response (<Response 11472 bytes [200 OK]>) to 10.0.1.233
+2021-12-22 22:36:20.660069 (Thread-22): handling status request
+2021-12-22 22:36:20.660416 (Thread-22): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '05f44c7c-a5b4-4382-b2af-27f2e5b942f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dcd322b0>]}
+2021-12-22 22:36:20.661175 (Thread-22): sending response (<Response 11472 bytes [200 OK]>) to 10.0.34.21
+2021-12-22 22:36:20.722525 (Thread-23): handling cli_args request
+2021-12-22 22:36:20.722794 (Thread-23): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '05f44c7c-a5b4-4382-b2af-27f2e5b942f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42ddda6c40>]}
+2021-12-22 22:36:20.733505 (Thread-23): Connection 'model.basic_dbt.my_first_dbt_model' was properly closed.
+2021-12-22 22:36:22.509854 (Thread-23): sending response (<Response 138 bytes [200 OK]>) to 10.0.6.80
+2021-12-22 22:36:22.554110 (MainThread): Partial parsing not enabled
+2021-12-22 22:36:22.583446 (MainThread): Parsing macros/generate_schema_name.sql
+2021-12-22 22:36:22.585430 (MainThread): Parsing macros/catalog.sql
+2021-12-22 22:36:22.597323 (MainThread): Parsing macros/adapters.sql
+2021-12-22 22:36:22.623521 (MainThread): Parsing macros/relations.sql
+2021-12-22 22:36:22.624005 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2021-12-22 22:36:22.624526 (MainThread): Parsing macros/catalog.sql
+2021-12-22 22:36:22.626510 (MainThread): Parsing macros/adapters.sql
+2021-12-22 22:36:22.647117 (MainThread): Parsing macros/relations.sql
+2021-12-22 22:36:22.648270 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2021-12-22 22:36:22.649850 (MainThread): Parsing macros/core.sql
+2021-12-22 22:36:22.653226 (MainThread): Parsing macros/materializations/test.sql
+2021-12-22 22:36:22.659391 (MainThread): Parsing macros/materializations/helpers.sql
+2021-12-22 22:36:22.668802 (MainThread): Parsing macros/materializations/view/view.sql
+2021-12-22 22:36:22.675618 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-12-22 22:36:22.679166 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-12-22 22:36:22.700415 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-12-22 22:36:22.716424 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-12-22 22:36:22.717936 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-12-22 22:36:22.747046 (MainThread): Parsing macros/materializations/table/table.sql
+2021-12-22 22:36:22.754116 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-12-22 22:36:22.766926 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2021-12-22 22:36:22.788623 (Thread-24): handling poll request
+2021-12-22 22:36:22.788918 (Thread-24): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '05f44c7c-a5b4-4382-b2af-27f2e5b942f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dcc7d9a0>]}
+2021-12-22 22:36:22.789840 (Thread-24): sending response (<Response 6323 bytes [200 OK]>) to 10.0.33.13
+2021-12-22 22:36:22.785361 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-12-22 22:36:22.795369 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-12-22 22:36:22.797028 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-12-22 22:36:22.798400 (MainThread): Parsing macros/etc/datetime.sql
+2021-12-22 22:36:22.806327 (MainThread): Parsing macros/etc/query.sql
+2021-12-22 22:36:22.807188 (MainThread): Parsing macros/etc/where_subquery.sql
+2021-12-22 22:36:22.808786 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-12-22 22:36:22.810247 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-12-22 22:36:22.812547 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-12-22 22:36:22.813902 (MainThread): Parsing macros/adapters/common.sql
+2021-12-22 22:36:22.865096 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-12-22 22:36:22.867194 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-12-22 22:36:22.868275 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-12-22 22:36:22.869774 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-12-22 22:36:23.052370 (MainThread): Acquiring new redshift connection "model.basic_dbt.my_second_dbt_model".
+2021-12-22 22:36:23.064513 (MainThread): Acquiring new redshift connection "model.basic_dbt.my_first_dbt_model".
+2021-12-22 22:36:23.157594 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a314e909-3753-4b41-b40f-e543d430d545', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7febaf016340>]}
+2021-12-22 22:36:23.187511 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a314e909-3753-4b41-b40f-e543d430d545', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7febaf0608b0>]}
+2021-12-22 22:36:23.187728 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 189 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-12-22 22:36:23.188863 (MainThread): 
+2021-12-22 22:36:23.189086 (MainThread): Acquiring new redshift connection "master".
+2021-12-22 22:36:23.189945 (ThreadPoolExecutor-0_0): Acquiring new redshift connection "list_ci".
+2021-12-22 22:36:23.199656 (ThreadPoolExecutor-0_0): Using redshift connection "list_ci".
+2021-12-22 22:36:23.199728 (ThreadPoolExecutor-0_0): On list_ci: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "user", "target_name": "default", "connection_name": "list_ci"} */
+
+    select distinct nspname from pg_namespace
+  
+2021-12-22 22:36:23.199783 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-12-22 22:36:23.199823 (ThreadPoolExecutor-0_0): Connecting to Redshift using 'database' credentials
+2021-12-22 22:36:23.200462 (ThreadPoolExecutor-0_1): Acquiring new redshift connection "list_ci".
+2021-12-22 22:36:23.201682 (ThreadPoolExecutor-0_1): Using redshift connection "list_ci".
+2021-12-22 22:36:23.201751 (ThreadPoolExecutor-0_1): On list_ci: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "user", "target_name": "default", "connection_name": "list_ci"} */
+
+    select distinct nspname from pg_namespace
+  
+2021-12-22 22:36:23.201803 (ThreadPoolExecutor-0_1): Opening a new connection, currently in state init
+2021-12-22 22:36:23.201842 (ThreadPoolExecutor-0_1): Connecting to Redshift using 'database' credentials
+2021-12-22 22:36:23.345791 (ThreadPoolExecutor-0_0): SQL status: SELECT in 0.15 seconds
+2021-12-22 22:36:23.350795 (ThreadPoolExecutor-0_0): On list_ci: Close
+2021-12-22 22:36:23.351136 (ThreadPoolExecutor-0_1): SQL status: SELECT in 0.15 seconds
+2021-12-22 22:36:23.356823 (ThreadPoolExecutor-0_1): On list_ci: Close
+2021-12-22 22:36:23.358403 (ThreadPoolExecutor-1_0): Acquiring new redshift connection "list_ci_bg_other_schema".
+2021-12-22 22:36:23.363584 (ThreadPoolExecutor-1_1): Acquiring new redshift connection "list_ci_bg_test_replication".
+2021-12-22 22:36:23.367585 (ThreadPoolExecutor-1_1): Using redshift connection "list_ci_bg_test_replication".
+2021-12-22 22:36:23.367654 (ThreadPoolExecutor-1_1): On list_ci_bg_test_replication: BEGIN
+2021-12-22 22:36:23.367709 (ThreadPoolExecutor-1_1): Opening a new connection, currently in state closed
+2021-12-22 22:36:23.367750 (ThreadPoolExecutor-1_1): Connecting to Redshift using 'database' credentials
+2021-12-22 22:36:23.369046 (ThreadPoolExecutor-1_0): Using redshift connection "list_ci_bg_other_schema".
+2021-12-22 22:36:23.369114 (ThreadPoolExecutor-1_0): On list_ci_bg_other_schema: BEGIN
+2021-12-22 22:36:23.369166 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-12-22 22:36:23.369206 (ThreadPoolExecutor-1_0): Connecting to Redshift using 'database' credentials
+2021-12-22 22:36:23.487317 (ThreadPoolExecutor-1_0): SQL status: BEGIN in 0.12 seconds
+2021-12-22 22:36:23.487471 (ThreadPoolExecutor-1_0): Using redshift connection "list_ci_bg_other_schema".
+2021-12-22 22:36:23.487523 (ThreadPoolExecutor-1_0): On list_ci_bg_other_schema: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "user", "target_name": "default", "connection_name": "list_ci_bg_other_schema"} */
+select
+      'ci' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'bg_other_schema'
+    union all
+    select
+      'ci' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'bg_other_schema'
+  
+2021-12-22 22:36:23.487789 (ThreadPoolExecutor-1_1): SQL status: BEGIN in 0.12 seconds
+2021-12-22 22:36:23.487895 (ThreadPoolExecutor-1_1): Using redshift connection "list_ci_bg_test_replication".
+2021-12-22 22:36:23.487943 (ThreadPoolExecutor-1_1): On list_ci_bg_test_replication: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "user", "target_name": "default", "connection_name": "list_ci_bg_test_replication"} */
+select
+      'ci' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'bg_test_replication'
+    union all
+    select
+      'ci' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'bg_test_replication'
+  
+2021-12-22 22:36:23.550827 (ThreadPoolExecutor-1_1): SQL status: SELECT in 0.06 seconds
+2021-12-22 22:36:23.551980 (ThreadPoolExecutor-1_1): On list_ci_bg_test_replication: ROLLBACK
+2021-12-22 22:36:23.560767 (ThreadPoolExecutor-1_0): SQL status: SELECT in 0.07 seconds
+2021-12-22 22:36:23.561831 (ThreadPoolExecutor-1_0): On list_ci_bg_other_schema: ROLLBACK
+2021-12-22 22:36:23.564911 (ThreadPoolExecutor-1_1): On list_ci_bg_test_replication: Close
+2021-12-22 22:36:23.574727 (ThreadPoolExecutor-1_0): On list_ci_bg_other_schema: Close
+2021-12-22 22:36:23.578813 (MainThread): Using redshift connection "master".
+2021-12-22 22:36:23.578903 (MainThread): On master: BEGIN
+2021-12-22 22:36:23.578962 (MainThread): Opening a new connection, currently in state init
+2021-12-22 22:36:23.579003 (MainThread): Connecting to Redshift using 'database' credentials
+2021-12-22 22:36:23.697759 (MainThread): SQL status: BEGIN in 0.12 seconds
+2021-12-22 22:36:23.697920 (MainThread): Using redshift connection "master".
+2021-12-22 22:36:23.697971 (MainThread): On master: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "user", "target_name": "default", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+2021-12-22 22:36:23.798780 (MainThread): SQL status: SELECT in 0.10 seconds
+2021-12-22 22:36:23.802607 (MainThread): On master: ROLLBACK
+2021-12-22 22:36:23.816319 (MainThread): Using redshift connection "master".
+2021-12-22 22:36:23.816403 (MainThread): On master: BEGIN
+2021-12-22 22:36:23.842866 (MainThread): SQL status: BEGIN in 0.03 seconds
+2021-12-22 22:36:23.842960 (MainThread): On master: COMMIT
+2021-12-22 22:36:23.843004 (MainThread): Using redshift connection "master".
+2021-12-22 22:36:23.843046 (MainThread): On master: COMMIT
+2021-12-22 22:36:23.855968 (MainThread): SQL status: COMMIT in 0.01 seconds
+2021-12-22 22:36:23.856060 (MainThread): On master: Close
+2021-12-22 22:36:23.856510 (MainThread): 22:36:23 | Concurrency: 4 threads (target='default')
+2021-12-22 22:36:23.856599 (MainThread): 22:36:23 | 
+2021-12-22 22:36:23.858807 (Thread-1): Began running node model.basic_dbt.my_first_dbt_model
+2021-12-22 22:36:23.859069 (Thread-1): 22:36:23 | 1 of 2 START table model bg_test_replication.my_first_dbt_model...... [RUN]
+2021-12-22 22:36:23.859308 (Thread-1): Acquiring new redshift connection "model.basic_dbt.my_first_dbt_model".
+2021-12-22 22:36:23.859386 (Thread-1): Compiling model.basic_dbt.my_first_dbt_model
+2021-12-22 22:36:23.861856 (Thread-1): Writing injected SQL for node "model.basic_dbt.my_first_dbt_model"
+2021-12-22 22:36:23.900310 (Thread-1): finished collecting timing info
+2021-12-22 22:36:23.929001 (Thread-1): Writing runtime SQL for node "model.basic_dbt.my_first_dbt_model"
+2021-12-22 22:36:23.965471 (Thread-1): Using redshift connection "model.basic_dbt.my_first_dbt_model".
+2021-12-22 22:36:23.965614 (Thread-1): On model.basic_dbt.my_first_dbt_model: BEGIN
+2021-12-22 22:36:23.965709 (Thread-1): Opening a new connection, currently in state closed
+2021-12-22 22:36:23.965778 (Thread-1): Connecting to Redshift using 'database' credentials
+2021-12-22 22:36:24.083971 (Thread-1): SQL status: BEGIN in 0.12 seconds
+2021-12-22 22:36:24.084127 (Thread-1): Using redshift connection "model.basic_dbt.my_first_dbt_model".
+2021-12-22 22:36:24.084180 (Thread-1): On model.basic_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "user", "target_name": "default", "node_id": "model.basic_dbt.my_first_dbt_model"} */
+
+
+  create  table
+    "ci"."bg_test_replication"."my_first_dbt_model__dbt_tmp"
+    
+    
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+2021-12-22 22:36:24.148301 (Thread-1): SQL status: SELECT in 0.06 seconds
+2021-12-22 22:36:24.154380 (Thread-1): Using redshift connection "model.basic_dbt.my_first_dbt_model".
+2021-12-22 22:36:24.154483 (Thread-1): On model.basic_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "user", "target_name": "default", "node_id": "model.basic_dbt.my_first_dbt_model"} */
+alter table "ci"."bg_test_replication"."my_first_dbt_model" rename to "my_first_dbt_model__dbt_backup"
+2021-12-22 22:36:24.168378 (Thread-1): SQL status: ALTER TABLE in 0.01 seconds
+2021-12-22 22:36:24.171418 (Thread-1): Using redshift connection "model.basic_dbt.my_first_dbt_model".
+2021-12-22 22:36:24.171501 (Thread-1): On model.basic_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "user", "target_name": "default", "node_id": "model.basic_dbt.my_first_dbt_model"} */
+alter table "ci"."bg_test_replication"."my_first_dbt_model__dbt_tmp" rename to "my_first_dbt_model"
+2021-12-22 22:36:24.179771 (Thread-25): handling poll request
+2021-12-22 22:36:24.180045 (Thread-25): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '05f44c7c-a5b4-4382-b2af-27f2e5b942f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dcd1a9a0>]}
+2021-12-22 22:36:24.181549 (Thread-25): sending response (<Response 34175 bytes [200 OK]>) to 10.0.33.13
+2021-12-22 22:36:24.185249 (Thread-1): SQL status: ALTER TABLE in 0.01 seconds
+2021-12-22 22:36:24.195797 (Thread-1): On model.basic_dbt.my_first_dbt_model: COMMIT
+2021-12-22 22:36:24.195884 (Thread-1): Using redshift connection "model.basic_dbt.my_first_dbt_model".
+2021-12-22 22:36:24.195930 (Thread-1): On model.basic_dbt.my_first_dbt_model: COMMIT
+2021-12-22 22:36:24.266559 (Thread-1): SQL status: COMMIT in 0.07 seconds
+2021-12-22 22:36:24.266873 (Thread-1): Using redshift connection "model.basic_dbt.my_first_dbt_model".
+2021-12-22 22:36:24.266936 (Thread-1): On model.basic_dbt.my_first_dbt_model: BEGIN
+2021-12-22 22:36:24.280259 (Thread-1): SQL status: BEGIN in 0.01 seconds
+2021-12-22 22:36:24.284747 (Thread-1): Using redshift connection "model.basic_dbt.my_first_dbt_model".
+2021-12-22 22:36:24.284821 (Thread-1): On model.basic_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "user", "target_name": "default", "node_id": "model.basic_dbt.my_first_dbt_model"} */
+drop table if exists "ci"."bg_test_replication"."my_first_dbt_model__dbt_backup" cascade
+2021-12-22 22:36:24.300851 (Thread-1): SQL status: DROP TABLE in 0.02 seconds
+2021-12-22 22:36:24.301529 (Thread-1): On model.basic_dbt.my_first_dbt_model: COMMIT
+2021-12-22 22:36:24.301594 (Thread-1): Using redshift connection "model.basic_dbt.my_first_dbt_model".
+2021-12-22 22:36:24.301639 (Thread-1): On model.basic_dbt.my_first_dbt_model: COMMIT
+2021-12-22 22:36:24.350700 (Thread-1): SQL status: COMMIT in 0.05 seconds
+2021-12-22 22:36:24.350836 (Thread-1): Using redshift connection "model.basic_dbt.my_first_dbt_model".
+2021-12-22 22:36:24.350887 (Thread-1): On model.basic_dbt.my_first_dbt_model: BEGIN
+2021-12-22 22:36:24.363976 (Thread-1): SQL status: BEGIN in 0.01 seconds
+2021-12-22 22:36:24.364475 (Thread-1): finished collecting timing info
+2021-12-22 22:36:24.364580 (Thread-1): On model.basic_dbt.my_first_dbt_model: ROLLBACK
+2021-12-22 22:36:24.377486 (Thread-1): On model.basic_dbt.my_first_dbt_model: Close
+2021-12-22 22:36:24.377971 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a314e909-3753-4b41-b40f-e543d430d545', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7febade8dee0>]}
+2021-12-22 22:36:24.378314 (Thread-1): 22:36:24 | 1 of 2 OK created table model bg_test_replication.my_first_dbt_model. [SELECT in 0.52s]
+2021-12-22 22:36:24.378393 (Thread-1): Finished running node model.basic_dbt.my_first_dbt_model
+2021-12-22 22:36:24.379171 (Thread-3): Began running node model.basic_dbt.my_second_dbt_model
+2021-12-22 22:36:24.379396 (Thread-3): 22:36:24 | 2 of 2 START table model bg_other_schema.my_second_dbt_model......... [RUN]
+2021-12-22 22:36:24.379640 (Thread-3): Acquiring new redshift connection "model.basic_dbt.my_second_dbt_model".
+2021-12-22 22:36:24.379713 (Thread-3): Compiling model.basic_dbt.my_second_dbt_model
+2021-12-22 22:36:24.382407 (Thread-3): Writing injected SQL for node "model.basic_dbt.my_second_dbt_model"
+2021-12-22 22:36:24.438694 (Thread-3): finished collecting timing info
+2021-12-22 22:36:24.441036 (Thread-3): Writing runtime SQL for node "model.basic_dbt.my_second_dbt_model"
+2021-12-22 22:36:24.453015 (Thread-3): Using redshift connection "model.basic_dbt.my_second_dbt_model".
+2021-12-22 22:36:24.453123 (Thread-3): On model.basic_dbt.my_second_dbt_model: BEGIN
+2021-12-22 22:36:24.453188 (Thread-3): Opening a new connection, currently in state init
+2021-12-22 22:36:24.453231 (Thread-3): Connecting to Redshift using 'database' credentials
+2021-12-22 22:36:24.570061 (Thread-3): SQL status: BEGIN in 0.12 seconds
+2021-12-22 22:36:24.570222 (Thread-3): Using redshift connection "model.basic_dbt.my_second_dbt_model".
+2021-12-22 22:36:24.570275 (Thread-3): On model.basic_dbt.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "user", "target_name": "default", "node_id": "model.basic_dbt.my_second_dbt_model"} */
+
+
+  create  table
+    "ci"."bg_other_schema"."my_second_dbt_model__dbt_tmp"
+    
+    
+  as (
+    
+
+select *
+from "ci"."bg_test_replication"."my_first_dbt_model"
+where id = 1
+  );
+2021-12-22 22:36:24.623046 (Thread-3): SQL status: SELECT in 0.05 seconds
+2021-12-22 22:36:24.625238 (Thread-3): Using redshift connection "model.basic_dbt.my_second_dbt_model".
+2021-12-22 22:36:24.625331 (Thread-3): On model.basic_dbt.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "user", "target_name": "default", "node_id": "model.basic_dbt.my_second_dbt_model"} */
+alter table "ci"."bg_other_schema"."my_second_dbt_model" rename to "my_second_dbt_model__dbt_backup"
+2021-12-22 22:36:24.639013 (Thread-3): SQL status: ALTER TABLE in 0.01 seconds
+2021-12-22 22:36:24.640976 (Thread-3): Using redshift connection "model.basic_dbt.my_second_dbt_model".
+2021-12-22 22:36:24.641047 (Thread-3): On model.basic_dbt.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "user", "target_name": "default", "node_id": "model.basic_dbt.my_second_dbt_model"} */
+alter table "ci"."bg_other_schema"."my_second_dbt_model__dbt_tmp" rename to "my_second_dbt_model"
+2021-12-22 22:36:24.654358 (Thread-3): SQL status: ALTER TABLE in 0.01 seconds
+2021-12-22 22:36:24.655435 (Thread-3): On model.basic_dbt.my_second_dbt_model: COMMIT
+2021-12-22 22:36:24.655508 (Thread-3): Using redshift connection "model.basic_dbt.my_second_dbt_model".
+2021-12-22 22:36:24.655553 (Thread-3): On model.basic_dbt.my_second_dbt_model: COMMIT
+2021-12-22 22:36:24.712416 (Thread-3): SQL status: COMMIT in 0.06 seconds
+2021-12-22 22:36:24.712753 (Thread-3): Using redshift connection "model.basic_dbt.my_second_dbt_model".
+2021-12-22 22:36:24.712815 (Thread-3): On model.basic_dbt.my_second_dbt_model: BEGIN
+2021-12-22 22:36:24.726038 (Thread-3): SQL status: BEGIN in 0.01 seconds
+2021-12-22 22:36:24.727587 (Thread-3): Using redshift connection "model.basic_dbt.my_second_dbt_model".
+2021-12-22 22:36:24.727661 (Thread-3): On model.basic_dbt.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "user", "target_name": "default", "node_id": "model.basic_dbt.my_second_dbt_model"} */
+drop table if exists "ci"."bg_other_schema"."my_second_dbt_model__dbt_backup" cascade
+2021-12-22 22:36:24.743532 (Thread-3): SQL status: DROP TABLE in 0.02 seconds
+2021-12-22 22:36:24.744297 (Thread-3): On model.basic_dbt.my_second_dbt_model: COMMIT
+2021-12-22 22:36:24.744369 (Thread-3): Using redshift connection "model.basic_dbt.my_second_dbt_model".
+2021-12-22 22:36:24.744415 (Thread-3): On model.basic_dbt.my_second_dbt_model: COMMIT
+2021-12-22 22:36:24.797322 (Thread-3): SQL status: COMMIT in 0.05 seconds
+2021-12-22 22:36:24.797500 (Thread-3): Using redshift connection "model.basic_dbt.my_second_dbt_model".
+2021-12-22 22:36:24.797554 (Thread-3): On model.basic_dbt.my_second_dbt_model: BEGIN
+2021-12-22 22:36:24.810838 (Thread-3): SQL status: BEGIN in 0.01 seconds
+2021-12-22 22:36:24.811322 (Thread-3): finished collecting timing info
+2021-12-22 22:36:24.811427 (Thread-3): On model.basic_dbt.my_second_dbt_model: ROLLBACK
+2021-12-22 22:36:24.825185 (Thread-3): On model.basic_dbt.my_second_dbt_model: Close
+2021-12-22 22:36:24.825689 (Thread-3): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a314e909-3753-4b41-b40f-e543d430d545', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7febade8df10>]}
+2021-12-22 22:36:24.826034 (Thread-3): 22:36:24 | 2 of 2 OK created table model bg_other_schema.my_second_dbt_model.... [SELECT in 0.45s]
+2021-12-22 22:36:24.826115 (Thread-3): Finished running node model.basic_dbt.my_second_dbt_model
+2021-12-22 22:36:24.827568 (MainThread): Acquiring new redshift connection "master".
+2021-12-22 22:36:24.827687 (MainThread): Using redshift connection "master".
+2021-12-22 22:36:24.827735 (MainThread): On master: BEGIN
+2021-12-22 22:36:24.827788 (MainThread): Opening a new connection, currently in state closed
+2021-12-22 22:36:24.827827 (MainThread): Connecting to Redshift using 'database' credentials
+2021-12-22 22:36:24.943705 (MainThread): SQL status: BEGIN in 0.12 seconds
+2021-12-22 22:36:24.943871 (MainThread): On master: COMMIT
+2021-12-22 22:36:24.943923 (MainThread): Using redshift connection "master".
+2021-12-22 22:36:24.943970 (MainThread): On master: COMMIT
+2021-12-22 22:36:24.956514 (MainThread): SQL status: COMMIT in 0.01 seconds
+2021-12-22 22:36:24.956626 (MainThread): On master: Close
+2021-12-22 22:36:24.957135 (MainThread): 22:36:24 | 
+2021-12-22 22:36:24.957229 (MainThread): 22:36:24 | Finished running 2 table models in 1.77s.
+2021-12-22 22:36:24.957281 (MainThread): Connection 'master' was properly closed.
+2021-12-22 22:36:24.957320 (MainThread): Connection 'list_ci_bg_test_replication' was properly closed.
+2021-12-22 22:36:24.957354 (MainThread): Connection 'model.basic_dbt.my_first_dbt_model' was properly closed.
+2021-12-22 22:36:24.957388 (MainThread): Connection 'model.basic_dbt.my_second_dbt_model' was properly closed.
+2021-12-22 22:36:24.996929 (MainThread): 
+2021-12-22 22:36:24.997039 (MainThread): Completed successfully
+2021-12-22 22:36:24.997102 (MainThread): 
+Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+2021-12-22 22:36:25.491790 (Thread-26): handling poll request
+2021-12-22 22:36:25.492124 (Thread-26): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '05f44c7c-a5b4-4382-b2af-27f2e5b942f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dccbcfd0>]}
+2021-12-22 22:36:25.493901 (Thread-26): sending response (<Response 37515 bytes [200 OK]>) to 10.0.4.10
+2021-12-22 22:36:26.206360 (Thread-27): handling status request
+2021-12-22 22:36:26.206671 (Thread-27): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '05f44c7c-a5b4-4382-b2af-27f2e5b942f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc4061f0>]}
+2021-12-22 22:36:26.207512 (Thread-27): sending response (<Response 11450 bytes [200 OK]>) to 10.0.35.28
+2021-12-22 22:36:26.213610 (Thread-28): handling list request
+2021-12-22 22:36:26.213810 (Thread-28): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '05f44c7c-a5b4-4382-b2af-27f2e5b942f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc406460>]}
+2021-12-22 22:36:26.250658 (Thread-28): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4b233f99-64af-44d3-851d-147943d51309', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc406f40>]}
+2021-12-22 22:36:26.250926 (Thread-28): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 189 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-12-22 22:36:26.251839 (Thread-28): The selection criterion '+1640212564240/__unsaved/Statement' does not match any nodes
+2021-12-22 22:36:26.252016 (Thread-28): The selection criterion '1.sql+' does not match any nodes
+2021-12-22 22:36:26.252103 (Thread-28): No nodes selected!
+2021-12-22 22:36:26.253590 (Thread-28): sending response (<Response 2282 bytes [200 OK]>) to 10.0.35.28
+2021-12-22 22:36:26.260116 (Thread-29): handling status request
+2021-12-22 22:36:26.260305 (Thread-29): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4b233f99-64af-44d3-851d-147943d51309', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc406dc0>]}
+2021-12-22 22:36:26.260900 (Thread-29): sending response (<Response 11472 bytes [200 OK]>) to 10.0.6.80
+2021-12-22 22:36:26.335375 (Thread-30): handling status request
+2021-12-22 22:36:26.335689 (Thread-30): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4b233f99-64af-44d3-851d-147943d51309', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc4067f0>]}
+2021-12-22 22:36:26.336396 (Thread-30): sending response (<Response 11472 bytes [200 OK]>) to 10.0.6.80
+2021-12-22 22:36:40.774297 (Thread-31): handling status request
+2021-12-22 22:36:40.774680 (Thread-31): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4b233f99-64af-44d3-851d-147943d51309', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc3ff2b0>]}
+2021-12-22 22:36:40.775409 (Thread-31): sending response (<Response 11472 bytes [200 OK]>) to 10.0.34.21
+2021-12-22 22:36:40.906292 (Thread-32): handling status request
+2021-12-22 22:36:40.906594 (Thread-32): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4b233f99-64af-44d3-851d-147943d51309', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc3ff5e0>]}
+2021-12-22 22:36:40.907295 (Thread-32): sending response (<Response 11472 bytes [200 OK]>) to 10.0.4.163
+2021-12-22 22:36:41.081204 (Thread-33): handling cli_args request
+2021-12-22 22:36:41.081511 (Thread-33): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4b233f99-64af-44d3-851d-147943d51309', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc3ff7c0>]}
+2021-12-22 22:36:42.874948 (Thread-33): sending response (<Response 138 bytes [200 OK]>) to 10.0.23.128
+2021-12-22 22:36:42.914844 (MainThread): Partial parsing not enabled
+2021-12-22 22:36:42.946215 (MainThread): Parsing macros/generate_schema_name.sql
+2021-12-22 22:36:42.948435 (MainThread): Parsing macros/catalog.sql
+2021-12-22 22:36:42.965445 (MainThread): Parsing macros/adapters.sql
+2021-12-22 22:36:42.996742 (MainThread): Parsing macros/relations.sql
+2021-12-22 22:36:42.997241 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2021-12-22 22:36:42.997769 (MainThread): Parsing macros/catalog.sql
+2021-12-22 22:36:42.999779 (MainThread): Parsing macros/adapters.sql
+2021-12-22 22:36:43.020753 (MainThread): Parsing macros/relations.sql
+2021-12-22 22:36:43.021962 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2021-12-22 22:36:43.023597 (MainThread): Parsing macros/core.sql
+2021-12-22 22:36:43.027029 (MainThread): Parsing macros/materializations/test.sql
+2021-12-22 22:36:43.033543 (MainThread): Parsing macros/materializations/helpers.sql
+2021-12-22 22:36:43.042904 (MainThread): Parsing macros/materializations/view/view.sql
+2021-12-22 22:36:43.049813 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-12-22 22:36:43.053414 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-12-22 22:36:43.074922 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-12-22 22:36:43.091216 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-12-22 22:36:43.092742 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-12-22 22:36:43.122242 (MainThread): Parsing macros/materializations/table/table.sql
+2021-12-22 22:36:43.129099 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-12-22 22:36:43.142077 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2021-12-22 22:36:43.160302 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-12-22 22:36:43.170126 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-12-22 22:36:43.171783 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-12-22 22:36:43.173129 (MainThread): Parsing macros/etc/datetime.sql
+2021-12-22 22:36:43.181201 (MainThread): Parsing macros/etc/query.sql
+2021-12-22 22:36:43.182086 (MainThread): Parsing macros/etc/where_subquery.sql
+2021-12-22 22:36:43.183709 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-12-22 22:36:43.185136 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-12-22 22:36:43.187483 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-12-22 22:36:43.188847 (MainThread): Parsing macros/adapters/common.sql
+2021-12-22 22:36:43.240146 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-12-22 22:36:43.242230 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-12-22 22:36:43.243312 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-12-22 22:36:43.244816 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-12-22 22:36:43.428783 (MainThread): Acquiring new redshift connection "model.basic_dbt.my_second_dbt_model".
+2021-12-22 22:36:43.441070 (MainThread): Acquiring new redshift connection "model.basic_dbt.my_first_dbt_model".
+2021-12-22 22:36:43.531383 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c4b9793f-ae7c-4ba6-b758-185bc60ab8b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4522666ac0>]}
+2021-12-22 22:36:43.546174 (Thread-34): handling poll request
+2021-12-22 22:36:43.546484 (Thread-34): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4b233f99-64af-44d3-851d-147943d51309', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc415340>]}
+2021-12-22 22:36:43.547524 (Thread-34): sending response (<Response 11229 bytes [200 OK]>) to 10.0.20.71
+2021-12-22 22:36:43.562718 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c4b9793f-ae7c-4ba6-b758-185bc60ab8b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4522666b20>]}
+2021-12-22 22:36:43.562967 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 189 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-12-22 22:36:43.564181 (MainThread): 
+2021-12-22 22:36:43.564443 (MainThread): Acquiring new redshift connection "master".
+2021-12-22 22:36:43.565318 (ThreadPoolExecutor-0_0): Acquiring new redshift connection "list_ci".
+2021-12-22 22:36:43.575820 (ThreadPoolExecutor-0_1): Acquiring new redshift connection "list_ci".
+2021-12-22 22:36:43.580900 (ThreadPoolExecutor-0_0): Using redshift connection "list_ci".
+2021-12-22 22:36:43.580975 (ThreadPoolExecutor-0_0): On list_ci: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "user", "target_name": "default", "connection_name": "list_ci"} */
+
+    select distinct nspname from pg_namespace
+  
+2021-12-22 22:36:43.581033 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-12-22 22:36:43.581082 (ThreadPoolExecutor-0_0): Connecting to Redshift using 'database' credentials
+2021-12-22 22:36:43.581826 (ThreadPoolExecutor-0_1): Using redshift connection "list_ci".
+2021-12-22 22:36:43.581907 (ThreadPoolExecutor-0_1): On list_ci: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "user", "target_name": "default", "connection_name": "list_ci"} */
+
+    select distinct nspname from pg_namespace
+  
+2021-12-22 22:36:43.581963 (ThreadPoolExecutor-0_1): Opening a new connection, currently in state init
+2021-12-22 22:36:43.582035 (ThreadPoolExecutor-0_1): Connecting to Redshift using 'database' credentials
+2021-12-22 22:36:43.727425 (ThreadPoolExecutor-0_0): SQL status: SELECT in 0.15 seconds
+2021-12-22 22:36:43.733135 (ThreadPoolExecutor-0_0): On list_ci: Close
+2021-12-22 22:36:43.733793 (ThreadPoolExecutor-0_1): SQL status: SELECT in 0.15 seconds
+2021-12-22 22:36:43.738302 (ThreadPoolExecutor-0_1): On list_ci: Close
+2021-12-22 22:36:43.739688 (ThreadPoolExecutor-1_0): Acquiring new redshift connection "list_ci_staging_bg_test_replication".
+2021-12-22 22:36:43.744902 (ThreadPoolExecutor-1_1): Acquiring new redshift connection "list_ci_bg_other_schema".
+2021-12-22 22:36:43.748491 (ThreadPoolExecutor-1_1): Using redshift connection "list_ci_bg_other_schema".
+2021-12-22 22:36:43.748563 (ThreadPoolExecutor-1_1): On list_ci_bg_other_schema: BEGIN
+2021-12-22 22:36:43.748623 (ThreadPoolExecutor-1_1): Opening a new connection, currently in state closed
+2021-12-22 22:36:43.748664 (ThreadPoolExecutor-1_1): Connecting to Redshift using 'database' credentials
+2021-12-22 22:36:43.750134 (ThreadPoolExecutor-1_0): Using redshift connection "list_ci_staging_bg_test_replication".
+2021-12-22 22:36:43.750206 (ThreadPoolExecutor-1_0): On list_ci_staging_bg_test_replication: BEGIN
+2021-12-22 22:36:43.750262 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-12-22 22:36:43.750302 (ThreadPoolExecutor-1_0): Connecting to Redshift using 'database' credentials
+2021-12-22 22:36:43.870321 (ThreadPoolExecutor-1_1): SQL status: BEGIN in 0.12 seconds
+2021-12-22 22:36:43.870477 (ThreadPoolExecutor-1_1): Using redshift connection "list_ci_bg_other_schema".
+2021-12-22 22:36:43.870529 (ThreadPoolExecutor-1_1): On list_ci_bg_other_schema: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "user", "target_name": "default", "connection_name": "list_ci_bg_other_schema"} */
+select
+      'ci' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'bg_other_schema'
+    union all
+    select
+      'ci' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'bg_other_schema'
+  
+2021-12-22 22:36:43.870654 (ThreadPoolExecutor-1_0): SQL status: BEGIN in 0.12 seconds
+2021-12-22 22:36:43.870766 (ThreadPoolExecutor-1_0): Using redshift connection "list_ci_staging_bg_test_replication".
+2021-12-22 22:36:43.870814 (ThreadPoolExecutor-1_0): On list_ci_staging_bg_test_replication: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "user", "target_name": "default", "connection_name": "list_ci_staging_bg_test_replication"} */
+select
+      'ci' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'staging_bg_test_replication'
+    union all
+    select
+      'ci' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'staging_bg_test_replication'
+  
+2021-12-22 22:36:43.939438 (ThreadPoolExecutor-1_0): SQL status: SELECT in 0.07 seconds
+2021-12-22 22:36:43.940611 (ThreadPoolExecutor-1_0): On list_ci_staging_bg_test_replication: ROLLBACK
+2021-12-22 22:36:43.940785 (ThreadPoolExecutor-1_1): SQL status: SELECT in 0.07 seconds
+2021-12-22 22:36:43.941753 (ThreadPoolExecutor-1_1): On list_ci_bg_other_schema: ROLLBACK
+2021-12-22 22:36:43.953749 (ThreadPoolExecutor-1_0): On list_ci_staging_bg_test_replication: Close
+2021-12-22 22:36:43.954645 (ThreadPoolExecutor-1_1): On list_ci_bg_other_schema: Close
+2021-12-22 22:36:43.958664 (MainThread): Using redshift connection "master".
+2021-12-22 22:36:43.958754 (MainThread): On master: BEGIN
+2021-12-22 22:36:43.958814 (MainThread): Opening a new connection, currently in state init
+2021-12-22 22:36:43.958856 (MainThread): Connecting to Redshift using 'database' credentials
+2021-12-22 22:36:44.074343 (MainThread): SQL status: BEGIN in 0.12 seconds
+2021-12-22 22:36:44.074510 (MainThread): Using redshift connection "master".
+2021-12-22 22:36:44.074562 (MainThread): On master: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "user", "target_name": "default", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+2021-12-22 22:36:44.170494 (MainThread): SQL status: SELECT in 0.10 seconds
+2021-12-22 22:36:44.174327 (MainThread): On master: ROLLBACK
+2021-12-22 22:36:44.187077 (MainThread): Using redshift connection "master".
+2021-12-22 22:36:44.187169 (MainThread): On master: BEGIN
+2021-12-22 22:36:44.212657 (MainThread): SQL status: BEGIN in 0.03 seconds
+2021-12-22 22:36:44.212796 (MainThread): On master: COMMIT
+2021-12-22 22:36:44.212845 (MainThread): Using redshift connection "master".
+2021-12-22 22:36:44.212891 (MainThread): On master: COMMIT
+2021-12-22 22:36:44.226228 (MainThread): SQL status: COMMIT in 0.01 seconds
+2021-12-22 22:36:44.226334 (MainThread): On master: Close
+2021-12-22 22:36:44.226797 (MainThread): 22:36:44 | Concurrency: 4 threads (target='default')
+2021-12-22 22:36:44.226891 (MainThread): 22:36:44 | 
+2021-12-22 22:36:44.229112 (Thread-1): Began running node model.basic_dbt.my_first_dbt_model
+2021-12-22 22:36:44.229376 (Thread-1): 22:36:44 | 1 of 2 START table model staging_bg_test_replication.my_first_dbt_model [RUN]
+2021-12-22 22:36:44.229624 (Thread-1): Acquiring new redshift connection "model.basic_dbt.my_first_dbt_model".
+2021-12-22 22:36:44.229704 (Thread-1): Compiling model.basic_dbt.my_first_dbt_model
+2021-12-22 22:36:44.232239 (Thread-1): Writing injected SQL for node "model.basic_dbt.my_first_dbt_model"
+2021-12-22 22:36:44.248477 (Thread-1): finished collecting timing info
+2021-12-22 22:36:44.281082 (Thread-1): Writing runtime SQL for node "model.basic_dbt.my_first_dbt_model"
+2021-12-22 22:36:44.295743 (Thread-1): Using redshift connection "model.basic_dbt.my_first_dbt_model".
+2021-12-22 22:36:44.295840 (Thread-1): On model.basic_dbt.my_first_dbt_model: BEGIN
+2021-12-22 22:36:44.295900 (Thread-1): Opening a new connection, currently in state closed
+2021-12-22 22:36:44.295943 (Thread-1): Connecting to Redshift using 'database' credentials
+2021-12-22 22:36:44.413208 (Thread-1): SQL status: BEGIN in 0.12 seconds
+2021-12-22 22:36:44.413371 (Thread-1): Using redshift connection "model.basic_dbt.my_first_dbt_model".
+2021-12-22 22:36:44.413423 (Thread-1): On model.basic_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "user", "target_name": "default", "node_id": "model.basic_dbt.my_first_dbt_model"} */
+
+
+  create  table
+    "ci"."staging_bg_test_replication"."my_first_dbt_model__dbt_tmp"
+    
+    
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+2021-12-22 22:36:44.482216 (Thread-1): SQL status: SELECT in 0.07 seconds
+2021-12-22 22:36:44.488073 (Thread-1): Using redshift connection "model.basic_dbt.my_first_dbt_model".
+2021-12-22 22:36:44.488171 (Thread-1): On model.basic_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "user", "target_name": "default", "node_id": "model.basic_dbt.my_first_dbt_model"} */
+alter table "ci"."staging_bg_test_replication"."my_first_dbt_model" rename to "my_first_dbt_model__dbt_backup"
+2021-12-22 22:36:44.501794 (Thread-1): SQL status: ALTER TABLE in 0.01 seconds
+2021-12-22 22:36:44.503852 (Thread-1): Using redshift connection "model.basic_dbt.my_first_dbt_model".
+2021-12-22 22:36:44.503930 (Thread-1): On model.basic_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "user", "target_name": "default", "node_id": "model.basic_dbt.my_first_dbt_model"} */
+alter table "ci"."staging_bg_test_replication"."my_first_dbt_model__dbt_tmp" rename to "my_first_dbt_model"
+2021-12-22 22:36:44.517503 (Thread-1): SQL status: ALTER TABLE in 0.01 seconds
+2021-12-22 22:36:44.528097 (Thread-1): On model.basic_dbt.my_first_dbt_model: COMMIT
+2021-12-22 22:36:44.528189 (Thread-1): Using redshift connection "model.basic_dbt.my_first_dbt_model".
+2021-12-22 22:36:44.528236 (Thread-1): On model.basic_dbt.my_first_dbt_model: COMMIT
+2021-12-22 22:36:44.620030 (Thread-1): SQL status: COMMIT in 0.09 seconds
+2021-12-22 22:36:44.620385 (Thread-1): Using redshift connection "model.basic_dbt.my_first_dbt_model".
+2021-12-22 22:36:44.620458 (Thread-1): On model.basic_dbt.my_first_dbt_model: BEGIN
+2021-12-22 22:36:44.633701 (Thread-1): SQL status: BEGIN in 0.01 seconds
+2021-12-22 22:36:44.638277 (Thread-1): Using redshift connection "model.basic_dbt.my_first_dbt_model".
+2021-12-22 22:36:44.638360 (Thread-1): On model.basic_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "user", "target_name": "default", "node_id": "model.basic_dbt.my_first_dbt_model"} */
+drop table if exists "ci"."staging_bg_test_replication"."my_first_dbt_model__dbt_backup" cascade
+2021-12-22 22:36:44.654135 (Thread-1): SQL status: DROP TABLE in 0.02 seconds
+2021-12-22 22:36:44.654863 (Thread-1): On model.basic_dbt.my_first_dbt_model: COMMIT
+2021-12-22 22:36:44.654929 (Thread-1): Using redshift connection "model.basic_dbt.my_first_dbt_model".
+2021-12-22 22:36:44.654974 (Thread-1): On model.basic_dbt.my_first_dbt_model: COMMIT
+2021-12-22 22:36:44.708304 (Thread-1): SQL status: COMMIT in 0.05 seconds
+2021-12-22 22:36:44.708469 (Thread-1): Using redshift connection "model.basic_dbt.my_first_dbt_model".
+2021-12-22 22:36:44.708523 (Thread-1): On model.basic_dbt.my_first_dbt_model: BEGIN
+2021-12-22 22:36:44.721597 (Thread-1): SQL status: BEGIN in 0.01 seconds
+2021-12-22 22:36:44.722170 (Thread-1): finished collecting timing info
+2021-12-22 22:36:44.722289 (Thread-1): On model.basic_dbt.my_first_dbt_model: ROLLBACK
+2021-12-22 22:36:44.735060 (Thread-1): On model.basic_dbt.my_first_dbt_model: Close
+2021-12-22 22:36:44.735575 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c4b9793f-ae7c-4ba6-b758-185bc60ab8b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f452148fc70>]}
+2021-12-22 22:36:44.735895 (Thread-1): 22:36:44 | 1 of 2 OK created table model staging_bg_test_replication.my_first_dbt_model [SELECT in 0.51s]
+2021-12-22 22:36:44.735975 (Thread-1): Finished running node model.basic_dbt.my_first_dbt_model
+2021-12-22 22:36:44.736732 (Thread-3): Began running node model.basic_dbt.my_second_dbt_model
+2021-12-22 22:36:44.736959 (Thread-3): 22:36:44 | 2 of 2 START table model bg_other_schema.my_second_dbt_model......... [RUN]
+2021-12-22 22:36:44.737189 (Thread-3): Acquiring new redshift connection "model.basic_dbt.my_second_dbt_model".
+2021-12-22 22:36:44.737262 (Thread-3): Compiling model.basic_dbt.my_second_dbt_model
+2021-12-22 22:36:44.739988 (Thread-3): Writing injected SQL for node "model.basic_dbt.my_second_dbt_model"
+2021-12-22 22:36:44.757799 (Thread-3): finished collecting timing info
+2021-12-22 22:36:44.760057 (Thread-3): Writing runtime SQL for node "model.basic_dbt.my_second_dbt_model"
+2021-12-22 22:36:44.777270 (Thread-3): Using redshift connection "model.basic_dbt.my_second_dbt_model".
+2021-12-22 22:36:44.777366 (Thread-3): On model.basic_dbt.my_second_dbt_model: BEGIN
+2021-12-22 22:36:44.777430 (Thread-3): Opening a new connection, currently in state init
+2021-12-22 22:36:44.777473 (Thread-3): Connecting to Redshift using 'database' credentials
+2021-12-22 22:36:44.827513 (Thread-35): handling poll request
+2021-12-22 22:36:44.827863 (Thread-35): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4b233f99-64af-44d3-851d-147943d51309', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc3c8ca0>]}
+2021-12-22 22:36:44.829505 (Thread-35): sending response (<Response 42283 bytes [200 OK]>) to 10.0.35.231
+2021-12-22 22:36:44.893354 (Thread-3): SQL status: BEGIN in 0.12 seconds
+2021-12-22 22:36:44.893520 (Thread-3): Using redshift connection "model.basic_dbt.my_second_dbt_model".
+2021-12-22 22:36:44.893575 (Thread-3): On model.basic_dbt.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "user", "target_name": "default", "node_id": "model.basic_dbt.my_second_dbt_model"} */
+
+
+  create  table
+    "ci"."bg_other_schema"."my_second_dbt_model__dbt_tmp"
+    
+    
+  as (
+    
+
+select *
+from "ci"."staging_bg_test_replication"."my_first_dbt_model"
+where id = 1
+  );
+2021-12-22 22:36:44.947079 (Thread-3): SQL status: SELECT in 0.05 seconds
+2021-12-22 22:36:44.949307 (Thread-3): Using redshift connection "model.basic_dbt.my_second_dbt_model".
+2021-12-22 22:36:44.949396 (Thread-3): On model.basic_dbt.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "user", "target_name": "default", "node_id": "model.basic_dbt.my_second_dbt_model"} */
+alter table "ci"."bg_other_schema"."my_second_dbt_model" rename to "my_second_dbt_model__dbt_backup"
+2021-12-22 22:36:44.962779 (Thread-3): SQL status: ALTER TABLE in 0.01 seconds
+2021-12-22 22:36:44.964946 (Thread-3): Using redshift connection "model.basic_dbt.my_second_dbt_model".
+2021-12-22 22:36:44.965028 (Thread-3): On model.basic_dbt.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "user", "target_name": "default", "node_id": "model.basic_dbt.my_second_dbt_model"} */
+alter table "ci"."bg_other_schema"."my_second_dbt_model__dbt_tmp" rename to "my_second_dbt_model"
+2021-12-22 22:36:44.978266 (Thread-3): SQL status: ALTER TABLE in 0.01 seconds
+2021-12-22 22:36:44.979367 (Thread-3): On model.basic_dbt.my_second_dbt_model: COMMIT
+2021-12-22 22:36:44.979450 (Thread-3): Using redshift connection "model.basic_dbt.my_second_dbt_model".
+2021-12-22 22:36:44.979496 (Thread-3): On model.basic_dbt.my_second_dbt_model: COMMIT
+2021-12-22 22:36:45.035301 (Thread-3): SQL status: COMMIT in 0.06 seconds
+2021-12-22 22:36:45.035671 (Thread-3): Using redshift connection "model.basic_dbt.my_second_dbt_model".
+2021-12-22 22:36:45.035746 (Thread-3): On model.basic_dbt.my_second_dbt_model: BEGIN
+2021-12-22 22:36:45.048806 (Thread-3): SQL status: BEGIN in 0.01 seconds
+2021-12-22 22:36:45.050555 (Thread-3): Using redshift connection "model.basic_dbt.my_second_dbt_model".
+2021-12-22 22:36:45.050637 (Thread-3): On model.basic_dbt.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "user", "target_name": "default", "node_id": "model.basic_dbt.my_second_dbt_model"} */
+drop table if exists "ci"."bg_other_schema"."my_second_dbt_model__dbt_backup" cascade
+2021-12-22 22:36:45.066237 (Thread-3): SQL status: DROP TABLE in 0.02 seconds
+2021-12-22 22:36:45.066976 (Thread-3): On model.basic_dbt.my_second_dbt_model: COMMIT
+2021-12-22 22:36:45.067046 (Thread-3): Using redshift connection "model.basic_dbt.my_second_dbt_model".
+2021-12-22 22:36:45.067092 (Thread-3): On model.basic_dbt.my_second_dbt_model: COMMIT
+2021-12-22 22:36:45.115942 (Thread-3): SQL status: COMMIT in 0.05 seconds
+2021-12-22 22:36:45.116084 (Thread-3): Using redshift connection "model.basic_dbt.my_second_dbt_model".
+2021-12-22 22:36:45.116134 (Thread-3): On model.basic_dbt.my_second_dbt_model: BEGIN
+2021-12-22 22:36:45.129114 (Thread-3): SQL status: BEGIN in 0.01 seconds
+2021-12-22 22:36:45.129629 (Thread-3): finished collecting timing info
+2021-12-22 22:36:45.129742 (Thread-3): On model.basic_dbt.my_second_dbt_model: ROLLBACK
+2021-12-22 22:36:45.142686 (Thread-3): On model.basic_dbt.my_second_dbt_model: Close
+2021-12-22 22:36:45.143185 (Thread-3): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c4b9793f-ae7c-4ba6-b758-185bc60ab8b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f452148fc10>]}
+2021-12-22 22:36:45.143508 (Thread-3): 22:36:45 | 2 of 2 OK created table model bg_other_schema.my_second_dbt_model.... [SELECT in 0.41s]
+2021-12-22 22:36:45.143586 (Thread-3): Finished running node model.basic_dbt.my_second_dbt_model
+2021-12-22 22:36:45.144992 (MainThread): Acquiring new redshift connection "master".
+2021-12-22 22:36:45.145110 (MainThread): Using redshift connection "master".
+2021-12-22 22:36:45.145158 (MainThread): On master: BEGIN
+2021-12-22 22:36:45.145211 (MainThread): Opening a new connection, currently in state closed
+2021-12-22 22:36:45.145251 (MainThread): Connecting to Redshift using 'database' credentials
+2021-12-22 22:36:45.262081 (MainThread): SQL status: BEGIN in 0.12 seconds
+2021-12-22 22:36:45.262250 (MainThread): On master: COMMIT
+2021-12-22 22:36:45.262301 (MainThread): Using redshift connection "master".
+2021-12-22 22:36:45.262348 (MainThread): On master: COMMIT
+2021-12-22 22:36:45.275187 (MainThread): SQL status: COMMIT in 0.01 seconds
+2021-12-22 22:36:45.275318 (MainThread): On master: Close
+2021-12-22 22:36:45.275813 (MainThread): 22:36:45 | 
+2021-12-22 22:36:45.275911 (MainThread): 22:36:45 | Finished running 2 table models in 1.71s.
+2021-12-22 22:36:45.275965 (MainThread): Connection 'master' was properly closed.
+2021-12-22 22:36:45.276005 (MainThread): Connection 'model.basic_dbt.my_first_dbt_model' was properly closed.
+2021-12-22 22:36:45.276040 (MainThread): Connection 'list_ci_staging_bg_test_replication' was properly closed.
+2021-12-22 22:36:45.276074 (MainThread): Connection 'model.basic_dbt.my_second_dbt_model' was properly closed.
+2021-12-22 22:36:45.324935 (MainThread): 
+2021-12-22 22:36:45.325072 (MainThread): Completed successfully
+2021-12-22 22:36:45.325134 (MainThread): 
+Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+2021-12-22 22:36:46.082810 (Thread-36): handling poll request
+2021-12-22 22:36:46.083143 (Thread-36): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4b233f99-64af-44d3-851d-147943d51309', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc3d6fa0>]}
+2021-12-22 22:36:46.106919 (Thread-36): sending response (<Response 24723 bytes [200 OK]>) to 10.0.4.163
+2021-12-22 22:36:46.628814 (Thread-37): handling status request
+2021-12-22 22:36:46.629130 (Thread-37): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4b233f99-64af-44d3-851d-147943d51309', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc3dea30>]}
+2021-12-22 22:36:46.630055 (Thread-37): sending response (<Response 11450 bytes [200 OK]>) to 10.0.35.28
+2021-12-22 22:36:46.635764 (Thread-38): handling list request
+2021-12-22 22:36:46.636001 (Thread-38): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4b233f99-64af-44d3-851d-147943d51309', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc3d6d00>]}
+2021-12-22 22:36:46.644933 (Thread-39): handling status request
+2021-12-22 22:36:46.645260 (Thread-39): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4ea68321-e836-438d-8248-90f1b8eeda47', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc3e7af0>]}
+2021-12-22 22:36:46.646410 (Thread-39): sending response (<Response 11472 bytes [200 OK]>) to 10.0.37.31
+2021-12-22 22:36:46.653789 (Thread-40): handling status request
+2021-12-22 22:36:46.653912 (Thread-40): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4ea68321-e836-438d-8248-90f1b8eeda47', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc3e7370>]}
+2021-12-22 22:36:46.654576 (Thread-40): sending response (<Response 11472 bytes [200 OK]>) to 10.0.20.71
+2021-12-22 22:36:46.670930 (Thread-38): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4ea68321-e836-438d-8248-90f1b8eeda47', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc3d6f40>]}
+2021-12-22 22:36:46.671165 (Thread-38): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 189 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-12-22 22:36:46.672039 (Thread-38): The selection criterion '+1640212564240/__unsaved/Statement' does not match any nodes
+2021-12-22 22:36:46.672193 (Thread-38): The selection criterion '1.sql+' does not match any nodes
+2021-12-22 22:36:46.672276 (Thread-38): No nodes selected!
+2021-12-22 22:36:46.674915 (Thread-38): sending response (<Response 4906 bytes [200 OK]>) to 10.0.35.28
+2021-12-22 22:38:36.800153 (Thread-41): handling status request
+2021-12-22 22:38:36.800468 (Thread-41): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4ea68321-e836-438d-8248-90f1b8eeda47', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc3e7070>]}
+2021-12-22 22:38:36.801252 (Thread-41): sending response (<Response 11472 bytes [200 OK]>) to 10.0.6.80
+2021-12-22 22:38:36.811219 (Thread-42): handling status request
+2021-12-22 22:38:36.811439 (Thread-42): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4ea68321-e836-438d-8248-90f1b8eeda47', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc3e79d0>]}
+2021-12-22 22:38:36.812111 (Thread-42): sending response (<Response 11472 bytes [200 OK]>) to 10.0.34.21
+2021-12-22 22:38:36.823219 (Thread-43): handling status request
+2021-12-22 22:38:36.823485 (Thread-43): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4ea68321-e836-438d-8248-90f1b8eeda47', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc3e7a30>]}
+2021-12-22 22:38:36.824172 (Thread-43): sending response (<Response 11472 bytes [200 OK]>) to 10.0.4.10
+2021-12-22 22:38:36.909827 (Thread-44): handling ps request
+2021-12-22 22:38:36.910157 (Thread-44): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4ea68321-e836-438d-8248-90f1b8eeda47', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc3e7040>]}
+2021-12-22 22:38:36.910805 (Thread-44): sending response (<Response 2082 bytes [200 OK]>) to 10.0.20.71
+2021-12-22 22:38:37.382224 (Thread-45): handling poll request
+2021-12-22 22:38:37.382541 (Thread-45): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4ea68321-e836-438d-8248-90f1b8eeda47', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc37f0a0>]}
+2021-12-22 22:38:37.384858 (Thread-45): sending response (<Response 77631 bytes [200 OK]>) to 10.0.23.128
+2021-12-22 22:38:37.849189 (Thread-46): handling status request
+2021-12-22 22:38:37.849508 (Thread-46): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4ea68321-e836-438d-8248-90f1b8eeda47', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc37f190>]}
+2021-12-22 22:38:37.850268 (Thread-46): sending response (<Response 11450 bytes [200 OK]>) to 10.0.35.28
+2021-12-22 22:38:37.857087 (Thread-47): handling list request
+2021-12-22 22:38:37.857312 (Thread-47): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4ea68321-e836-438d-8248-90f1b8eeda47', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc37f4f0>]}
+2021-12-22 22:38:37.883005 (Thread-47): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '00621326-f478-4dc3-bfa2-ed33754611a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc37ff10>]}
+2021-12-22 22:38:37.883285 (Thread-47): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 189 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-12-22 22:38:37.884025 (Thread-47): The selection criterion '+1640212564240/__unsaved/Statement' does not match any nodes
+2021-12-22 22:38:37.884193 (Thread-47): The selection criterion '1.sql+' does not match any nodes
+2021-12-22 22:38:37.884275 (Thread-47): No nodes selected!
+2021-12-22 22:38:37.885812 (Thread-47): sending response (<Response 2282 bytes [200 OK]>) to 10.0.35.28
+2021-12-22 22:38:38.035473 (Thread-48): handling status request
+2021-12-22 22:38:38.035775 (Thread-48): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '00621326-f478-4dc3-bfa2-ed33754611a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc37e760>]}
+2021-12-22 22:38:38.036773 (Thread-48): sending response (<Response 11472 bytes [200 OK]>) to 10.0.37.31
+2021-12-22 22:38:38.049876 (Thread-49): handling status request
+2021-12-22 22:38:38.050155 (Thread-49): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '00621326-f478-4dc3-bfa2-ed33754611a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dddf3c10>]}
+2021-12-22 22:38:38.050882 (Thread-49): sending response (<Response 11450 bytes [200 OK]>) to 10.0.35.28
+2021-12-22 22:38:38.057469 (Thread-50): handling list request
+2021-12-22 22:38:38.057678 (Thread-50): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '00621326-f478-4dc3-bfa2-ed33754611a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc3de970>]}
+2021-12-22 22:38:38.090485 (Thread-50): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '529f8add-8a75-4d10-b772-ea2e31346f7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc3e7fd0>]}
+2021-12-22 22:38:38.090829 (Thread-50): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 189 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-12-22 22:38:38.091676 (Thread-50): The selection criterion '+1640212564240/__unsaved/Statement' does not match any nodes
+2021-12-22 22:38:38.091869 (Thread-50): The selection criterion '1.sql+' does not match any nodes
+2021-12-22 22:38:38.091955 (Thread-50): No nodes selected!
+2021-12-22 22:38:38.093877 (Thread-50): sending response (<Response 2282 bytes [200 OK]>) to 10.0.35.28
+2021-12-22 22:38:38.547707 (Thread-51): handling status request
+2021-12-22 22:38:38.548014 (Thread-51): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '529f8add-8a75-4d10-b772-ea2e31346f7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc37e9a0>]}
+2021-12-22 22:38:38.548743 (Thread-51): sending response (<Response 11472 bytes [200 OK]>) to 10.0.1.233
+2021-12-22 22:38:40.990953 (Thread-52): handling status request
+2021-12-22 22:38:40.991268 (Thread-52): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '529f8add-8a75-4d10-b772-ea2e31346f7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc37ebb0>]}
+2021-12-22 22:38:40.991969 (Thread-52): sending response (<Response 11450 bytes [200 OK]>) to 10.0.35.28
+2021-12-22 22:38:40.997699 (Thread-53): handling list request
+2021-12-22 22:38:40.997905 (Thread-53): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '529f8add-8a75-4d10-b772-ea2e31346f7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc37eee0>]}
+2021-12-22 22:38:41.024601 (Thread-53): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8dba03b7-54e4-487f-b6d0-5b8e821327b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc37e8e0>]}
+2021-12-22 22:38:41.024864 (Thread-53): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 189 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-12-22 22:38:41.027544 (Thread-53): sending response (<Response 4953 bytes [200 OK]>) to 10.0.35.28
+2021-12-22 22:38:47.051104 (Thread-54): Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+2021-12-22 22:38:47.051472 (Thread-54): Partial parsing: update schema file: basic_dbt://models/example/schema.yml
+2021-12-22 22:38:47.055420 (Thread-54): Acquiring new redshift connection "model.basic_dbt.my_first_dbt_model".
+2021-12-22 22:38:47.106210 (Thread-54): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8dba03b7-54e4-487f-b6d0-5b8e821327b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc312d60>]}
+2021-12-22 22:38:47.482127 (Thread-55): handling status request
+2021-12-22 22:38:47.482444 (Thread-55): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '8dba03b7-54e4-487f-b6d0-5b8e821327b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc3122b0>]}
+2021-12-22 22:38:47.482928 (Thread-55): sending response (<Response 1529 bytes [200 OK]>) to 10.0.4.163
+2021-12-22 22:38:47.523002 (Thread-56): handling status request
+2021-12-22 22:38:47.523280 (Thread-56): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '8dba03b7-54e4-487f-b6d0-5b8e821327b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc312bb0>]}
+2021-12-22 22:38:47.523732 (Thread-56): sending response (<Response 1529 bytes [200 OK]>) to 10.0.22.127
+2021-12-22 22:38:55.009782 (Thread-57): handling status request
+2021-12-22 22:38:55.010125 (Thread-57): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '8dba03b7-54e4-487f-b6d0-5b8e821327b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc3120a0>]}
+2021-12-22 22:38:55.010606 (Thread-57): sending response (<Response 1529 bytes [200 OK]>) to 10.0.22.219
+2021-12-22 22:38:55.144475 (Thread-58): handling status request
+2021-12-22 22:38:55.144782 (Thread-58): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '8dba03b7-54e4-487f-b6d0-5b8e821327b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc312a90>]}
+2021-12-22 22:38:55.145248 (Thread-58): sending response (<Response 1529 bytes [200 OK]>) to 10.0.22.127
+2021-12-22 22:38:55.287822 (Thread-59): handling cli_args request
+2021-12-22 22:38:55.288130 (Thread-59): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '8dba03b7-54e4-487f-b6d0-5b8e821327b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc377fa0>]}
+2021-12-22 22:38:55.298534 (Thread-59): Connection 'model.basic_dbt.my_first_dbt_model' was properly closed.
+2021-12-22 22:38:57.075972 (Thread-59): sending response (<Response 138 bytes [200 OK]>) to 10.0.37.31
+2021-12-22 22:38:57.116508 (MainThread): Partial parsing not enabled
+2021-12-22 22:38:57.144122 (MainThread): Parsing macros/generate_schema_name.sql
+2021-12-22 22:38:57.146035 (MainThread): Parsing macros/catalog.sql
+2021-12-22 22:38:57.158241 (MainThread): Parsing macros/adapters.sql
+2021-12-22 22:38:57.184605 (MainThread): Parsing macros/relations.sql
+2021-12-22 22:38:57.185094 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2021-12-22 22:38:57.185633 (MainThread): Parsing macros/catalog.sql
+2021-12-22 22:38:57.187665 (MainThread): Parsing macros/adapters.sql
+2021-12-22 22:38:57.208510 (MainThread): Parsing macros/relations.sql
+2021-12-22 22:38:57.209686 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2021-12-22 22:38:57.211288 (MainThread): Parsing macros/core.sql
+2021-12-22 22:38:57.214696 (MainThread): Parsing macros/materializations/test.sql
+2021-12-22 22:38:57.221063 (MainThread): Parsing macros/materializations/helpers.sql
+2021-12-22 22:38:57.230334 (MainThread): Parsing macros/materializations/view/view.sql
+2021-12-22 22:38:57.237176 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-12-22 22:38:57.242687 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-12-22 22:38:57.270410 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-12-22 22:38:57.286772 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-12-22 22:38:57.288328 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-12-22 22:38:57.318195 (MainThread): Parsing macros/materializations/table/table.sql
+2021-12-22 22:38:57.325122 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-12-22 22:38:57.338488 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2021-12-22 22:38:57.356949 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-12-22 22:38:57.366739 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-12-22 22:38:57.369255 (Thread-60): handling poll request
+2021-12-22 22:38:57.369553 (Thread-60): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '8dba03b7-54e4-487f-b6d0-5b8e821327b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc31a040>]}
+2021-12-22 22:38:57.370551 (Thread-60): sending response (<Response 6922 bytes [200 OK]>) to 10.0.22.219
+2021-12-22 22:38:57.368484 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-12-22 22:38:57.369849 (MainThread): Parsing macros/etc/datetime.sql
+2021-12-22 22:38:57.377812 (MainThread): Parsing macros/etc/query.sql
+2021-12-22 22:38:57.378714 (MainThread): Parsing macros/etc/where_subquery.sql
+2021-12-22 22:38:57.380387 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-12-22 22:38:57.381856 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-12-22 22:38:57.384252 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-12-22 22:38:57.385659 (MainThread): Parsing macros/adapters/common.sql
+2021-12-22 22:38:57.438523 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-12-22 22:38:57.441631 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-12-22 22:38:57.443279 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-12-22 22:38:57.445524 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-12-22 22:38:57.635358 (MainThread): Acquiring new redshift connection "model.basic_dbt.my_second_dbt_model".
+2021-12-22 22:38:57.647898 (MainThread): Acquiring new redshift connection "model.basic_dbt.my_first_dbt_model".
+2021-12-22 22:38:57.727353 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'bab67a9e-5491-40b9-9798-7e6b0dcbbe85', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49ca1f1bb0>]}
+2021-12-22 22:38:57.758173 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bab67a9e-5491-40b9-9798-7e6b0dcbbe85', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49ca1dca60>]}
+2021-12-22 22:38:57.758392 (MainThread): Found 2 models, 3 tests, 0 snapshots, 0 analyses, 189 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-12-22 22:38:57.759541 (MainThread): 
+2021-12-22 22:38:57.759764 (MainThread): Acquiring new redshift connection "master".
+2021-12-22 22:38:57.760606 (ThreadPoolExecutor-1_0): Acquiring new redshift connection "list_ci_staging_bg_test_replication".
+2021-12-22 22:38:57.770578 (ThreadPoolExecutor-1_0): Using redshift connection "list_ci_staging_bg_test_replication".
+2021-12-22 22:38:57.770648 (ThreadPoolExecutor-1_0): On list_ci_staging_bg_test_replication: BEGIN
+2021-12-22 22:38:57.770705 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state init
+2021-12-22 22:38:57.771051 (ThreadPoolExecutor-1_0): Connecting to Redshift using 'database' credentials
+2021-12-22 22:38:57.771479 (ThreadPoolExecutor-1_1): Acquiring new redshift connection "list_ci_bg_other_schema".
+2021-12-22 22:38:57.772574 (ThreadPoolExecutor-1_1): Using redshift connection "list_ci_bg_other_schema".
+2021-12-22 22:38:57.772642 (ThreadPoolExecutor-1_1): On list_ci_bg_other_schema: BEGIN
+2021-12-22 22:38:57.772694 (ThreadPoolExecutor-1_1): Opening a new connection, currently in state init
+2021-12-22 22:38:57.772849 (ThreadPoolExecutor-1_1): Connecting to Redshift using 'database' credentials
+2021-12-22 22:38:57.894534 (ThreadPoolExecutor-1_1): SQL status: BEGIN in 0.12 seconds
+2021-12-22 22:38:57.894690 (ThreadPoolExecutor-1_1): Using redshift connection "list_ci_bg_other_schema".
+2021-12-22 22:38:57.894742 (ThreadPoolExecutor-1_1): On list_ci_bg_other_schema: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "user", "target_name": "default", "connection_name": "list_ci_bg_other_schema"} */
+select
+      'ci' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'bg_other_schema'
+    union all
+    select
+      'ci' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'bg_other_schema'
+  
+2021-12-22 22:38:57.895152 (ThreadPoolExecutor-1_0): SQL status: BEGIN in 0.12 seconds
+2021-12-22 22:38:57.895278 (ThreadPoolExecutor-1_0): Using redshift connection "list_ci_staging_bg_test_replication".
+2021-12-22 22:38:57.895329 (ThreadPoolExecutor-1_0): On list_ci_staging_bg_test_replication: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "user", "target_name": "default", "connection_name": "list_ci_staging_bg_test_replication"} */
+select
+      'ci' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'staging_bg_test_replication'
+    union all
+    select
+      'ci' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'staging_bg_test_replication'
+  
+2021-12-22 22:38:57.958695 (ThreadPoolExecutor-1_1): SQL status: SELECT in 0.06 seconds
+2021-12-22 22:38:57.959883 (ThreadPoolExecutor-1_1): On list_ci_bg_other_schema: ROLLBACK
+2021-12-22 22:38:57.960043 (ThreadPoolExecutor-1_0): SQL status: SELECT in 0.06 seconds
+2021-12-22 22:38:57.961013 (ThreadPoolExecutor-1_0): On list_ci_staging_bg_test_replication: ROLLBACK
+2021-12-22 22:38:57.972805 (ThreadPoolExecutor-1_1): On list_ci_bg_other_schema: Close
+2021-12-22 22:38:57.973927 (ThreadPoolExecutor-1_0): On list_ci_staging_bg_test_replication: Close
+2021-12-22 22:38:57.977770 (MainThread): Using redshift connection "master".
+2021-12-22 22:38:57.977860 (MainThread): On master: BEGIN
+2021-12-22 22:38:57.977941 (MainThread): Opening a new connection, currently in state init
+2021-12-22 22:38:57.978029 (MainThread): Connecting to Redshift using 'database' credentials
+2021-12-22 22:38:58.097529 (MainThread): SQL status: BEGIN in 0.12 seconds
+2021-12-22 22:38:58.097686 (MainThread): Using redshift connection "master".
+2021-12-22 22:38:58.097736 (MainThread): On master: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "user", "target_name": "default", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+2021-12-22 22:38:58.193907 (MainThread): SQL status: SELECT in 0.10 seconds
+2021-12-22 22:38:58.197874 (MainThread): On master: ROLLBACK
+2021-12-22 22:38:58.210966 (MainThread): On master: Close
+2021-12-22 22:38:58.211425 (MainThread): 22:38:58 | Concurrency: 4 threads (target='default')
+2021-12-22 22:38:58.211516 (MainThread): 22:38:58 | 
+2021-12-22 22:38:58.213698 (Thread-1): Began running node test.basic_dbt.not_null_my_second_dbt_model_id.151b76d778
+2021-12-22 22:38:58.213845 (Thread-1): 22:38:58 | 1 of 3 START test not_null_my_second_dbt_model_id.................... [RUN]
+2021-12-22 22:38:58.214253 (Thread-1): Acquiring new redshift connection "test.basic_dbt.not_null_my_second_dbt_model_id.151b76d778".
+2021-12-22 22:38:58.214343 (Thread-1): Compiling test.basic_dbt.not_null_my_second_dbt_model_id.151b76d778
+2021-12-22 22:38:58.218782 (Thread-2): Began running node test.basic_dbt.unique_my_first_dbt_model_id.16e066b321
+2021-12-22 22:38:58.218909 (Thread-2): 22:38:58 | 2 of 3 START test unique_my_first_dbt_model_id....................... [RUN]
+2021-12-22 22:38:58.219120 (Thread-2): Acquiring new redshift connection "test.basic_dbt.unique_my_first_dbt_model_id.16e066b321".
+2021-12-22 22:38:58.219192 (Thread-2): Compiling test.basic_dbt.unique_my_first_dbt_model_id.16e066b321
+2021-12-22 22:38:58.228662 (Thread-1): Writing injected SQL for node "test.basic_dbt.not_null_my_second_dbt_model_id.151b76d778"
+2021-12-22 22:38:58.228851 (Thread-3): Began running node test.basic_dbt.unique_my_second_dbt_model_id.57a0f8c493
+2021-12-22 22:38:58.228981 (Thread-3): 22:38:58 | 3 of 3 START test unique_my_second_dbt_model_id...................... [RUN]
+2021-12-22 22:38:58.229196 (Thread-3): Acquiring new redshift connection "test.basic_dbt.unique_my_second_dbt_model_id.57a0f8c493".
+2021-12-22 22:38:58.229261 (Thread-3): Compiling test.basic_dbt.unique_my_second_dbt_model_id.57a0f8c493
+2021-12-22 22:38:58.235535 (Thread-2): Writing injected SQL for node "test.basic_dbt.unique_my_first_dbt_model_id.16e066b321"
+2021-12-22 22:38:58.236560 (Thread-3): Writing injected SQL for node "test.basic_dbt.unique_my_second_dbt_model_id.57a0f8c493"
+2021-12-22 22:38:58.263310 (Thread-1): finished collecting timing info
+2021-12-22 22:38:58.273725 (Thread-3): finished collecting timing info
+2021-12-22 22:38:58.283351 (Thread-1): Writing runtime SQL for node "test.basic_dbt.not_null_my_second_dbt_model_id.151b76d778"
+2021-12-22 22:38:58.284447 (Thread-3): Writing runtime SQL for node "test.basic_dbt.unique_my_second_dbt_model_id.57a0f8c493"
+2021-12-22 22:38:58.289827 (Thread-2): finished collecting timing info
+2021-12-22 22:38:58.291316 (Thread-2): Writing runtime SQL for node "test.basic_dbt.unique_my_first_dbt_model_id.16e066b321"
+2021-12-22 22:38:58.317644 (Thread-3): Using redshift connection "test.basic_dbt.unique_my_second_dbt_model_id.57a0f8c493".
+2021-12-22 22:38:58.317731 (Thread-3): On test.basic_dbt.unique_my_second_dbt_model_id.57a0f8c493: BEGIN
+2021-12-22 22:38:58.317791 (Thread-3): Opening a new connection, currently in state init
+2021-12-22 22:38:58.317834 (Thread-3): Connecting to Redshift using 'database' credentials
+2021-12-22 22:38:58.318068 (Thread-1): Using redshift connection "test.basic_dbt.not_null_my_second_dbt_model_id.151b76d778".
+2021-12-22 22:38:58.318143 (Thread-1): On test.basic_dbt.not_null_my_second_dbt_model_id.151b76d778: BEGIN
+2021-12-22 22:38:58.318199 (Thread-1): Opening a new connection, currently in state closed
+2021-12-22 22:38:58.318243 (Thread-1): Connecting to Redshift using 'database' credentials
+2021-12-22 22:38:58.323828 (Thread-2): Using redshift connection "test.basic_dbt.unique_my_first_dbt_model_id.16e066b321".
+2021-12-22 22:38:58.323944 (Thread-2): On test.basic_dbt.unique_my_first_dbt_model_id.16e066b321: BEGIN
+2021-12-22 22:38:58.324030 (Thread-2): Opening a new connection, currently in state closed
+2021-12-22 22:38:58.324095 (Thread-2): Connecting to Redshift using 'database' credentials
+2021-12-22 22:38:58.439425 (Thread-3): SQL status: BEGIN in 0.12 seconds
+2021-12-22 22:38:58.439580 (Thread-3): Using redshift connection "test.basic_dbt.unique_my_second_dbt_model_id.57a0f8c493".
+2021-12-22 22:38:58.439632 (Thread-3): On test.basic_dbt.unique_my_second_dbt_model_id.57a0f8c493: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "user", "target_name": "default", "node_id": "test.basic_dbt.unique_my_second_dbt_model_id.57a0f8c493"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from "ci"."bg_other_schema"."my_second_dbt_model"
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+2021-12-22 22:38:58.441364 (Thread-1): SQL status: BEGIN in 0.12 seconds
+2021-12-22 22:38:58.441478 (Thread-1): Using redshift connection "test.basic_dbt.not_null_my_second_dbt_model_id.151b76d778".
+2021-12-22 22:38:58.441527 (Thread-1): On test.basic_dbt.not_null_my_second_dbt_model_id.151b76d778: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "user", "target_name": "default", "node_id": "test.basic_dbt.not_null_my_second_dbt_model_id.151b76d778"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select *
+from "ci"."bg_other_schema"."my_second_dbt_model"
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+2021-12-22 22:38:58.441634 (Thread-2): SQL status: BEGIN in 0.12 seconds
+2021-12-22 22:38:58.441731 (Thread-2): Using redshift connection "test.basic_dbt.unique_my_first_dbt_model_id.16e066b321".
+2021-12-22 22:38:58.441781 (Thread-2): On test.basic_dbt.unique_my_first_dbt_model_id.16e066b321: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "user", "target_name": "default", "node_id": "test.basic_dbt.unique_my_first_dbt_model_id.16e066b321"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from "ci"."staging_bg_test_replication"."my_first_dbt_model"
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+2021-12-22 22:38:58.459549 (Thread-1): SQL status: SELECT in 0.02 seconds
+2021-12-22 22:38:58.461335 (Thread-1): finished collecting timing info
+2021-12-22 22:38:58.461454 (Thread-1): On test.basic_dbt.not_null_my_second_dbt_model_id.151b76d778: ROLLBACK
+2021-12-22 22:38:58.461696 (Thread-3): SQL status: SELECT in 0.02 seconds
+2021-12-22 22:38:58.462871 (Thread-3): finished collecting timing info
+2021-12-22 22:38:58.462980 (Thread-3): On test.basic_dbt.unique_my_second_dbt_model_id.57a0f8c493: ROLLBACK
+2021-12-22 22:38:58.463179 (Thread-2): SQL status: SELECT in 0.02 seconds
+2021-12-22 22:38:58.464255 (Thread-2): finished collecting timing info
+2021-12-22 22:38:58.464356 (Thread-2): On test.basic_dbt.unique_my_first_dbt_model_id.16e066b321: ROLLBACK
+2021-12-22 22:38:58.475796 (Thread-1): On test.basic_dbt.not_null_my_second_dbt_model_id.151b76d778: Close
+2021-12-22 22:38:58.476259 (Thread-1): 22:38:58 | 1 of 3 PASS not_null_my_second_dbt_model_id.......................... [PASS in 0.26s]
+2021-12-22 22:38:58.476355 (Thread-1): Finished running node test.basic_dbt.not_null_my_second_dbt_model_id.151b76d778
+2021-12-22 22:38:58.478403 (Thread-3): On test.basic_dbt.unique_my_second_dbt_model_id.57a0f8c493: Close
+2021-12-22 22:38:58.478811 (Thread-3): 22:38:58 | 3 of 3 PASS unique_my_second_dbt_model_id............................ [PASS in 0.25s]
+2021-12-22 22:38:58.478901 (Thread-3): Finished running node test.basic_dbt.unique_my_second_dbt_model_id.57a0f8c493
+2021-12-22 22:38:58.479762 (Thread-2): On test.basic_dbt.unique_my_first_dbt_model_id.16e066b321: Close
+2021-12-22 22:38:58.480165 (Thread-2): 22:38:58 | 2 of 3 PASS unique_my_first_dbt_model_id............................. [PASS in 0.26s]
+2021-12-22 22:38:58.480254 (Thread-2): Finished running node test.basic_dbt.unique_my_first_dbt_model_id.16e066b321
+2021-12-22 22:38:58.481550 (MainThread): Acquiring new redshift connection "master".
+2021-12-22 22:38:58.481778 (MainThread): 22:38:58 | 
+2021-12-22 22:38:58.481840 (MainThread): 22:38:58 | Finished running 3 tests in 0.72s.
+2021-12-22 22:38:58.481888 (MainThread): Connection 'master' was properly closed.
+2021-12-22 22:38:58.481927 (MainThread): Connection 'test.basic_dbt.not_null_my_second_dbt_model_id.151b76d778' was properly closed.
+2021-12-22 22:38:58.481963 (MainThread): Connection 'test.basic_dbt.unique_my_first_dbt_model_id.16e066b321' was properly closed.
+2021-12-22 22:38:58.482026 (MainThread): Connection 'test.basic_dbt.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+2021-12-22 22:38:58.534663 (MainThread): 
+2021-12-22 22:38:58.534804 (MainThread): Completed successfully
+2021-12-22 22:38:58.534870 (MainThread): 
+Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+2021-12-22 22:38:58.709673 (Thread-61): handling poll request
+2021-12-22 22:38:58.710042 (Thread-61): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '8dba03b7-54e4-487f-b6d0-5b8e821327b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc2caca0>]}
+2021-12-22 22:38:58.712237 (Thread-61): sending response (<Response 55724 bytes [200 OK]>) to 10.0.35.231
+2021-12-22 22:38:59.397715 (Thread-62): handling status request
+2021-12-22 22:38:59.398047 (Thread-62): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '8dba03b7-54e4-487f-b6d0-5b8e821327b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc2cad90>]}
+2021-12-22 22:38:59.422455 (Thread-62): sending response (<Response 1529 bytes [200 OK]>) to 10.0.7.207
+2021-12-22 22:38:59.450146 (Thread-63): handling status request
+2021-12-22 22:38:59.450390 (Thread-63): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '8dba03b7-54e4-487f-b6d0-5b8e821327b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc31a970>]}
+2021-12-22 22:38:59.450804 (Thread-63): sending response (<Response 1529 bytes [200 OK]>) to 10.0.38.38
+2021-12-22 22:39:09.712460 (Thread-64): handling status request
+2021-12-22 22:39:09.712781 (Thread-64): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '8dba03b7-54e4-487f-b6d0-5b8e821327b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f42dc2dc430>]}
+2021-12-22 22:39:09.713241 (Thread-64): sending response (<Response 1529 bytes [200 OK]>) to 10.0.22.127
